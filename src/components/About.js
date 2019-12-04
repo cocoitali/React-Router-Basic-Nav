@@ -1,5 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-const About = () => <h1>About</h1>;
+function About(props) {
+	const { push } = props.history
+	return (
+		<div>
+			<h1>About</h1>
+			<button onClick={() => push('/')}>back home</button>
+		</div>
+	)
+}
 
-export default About;
+export default About
